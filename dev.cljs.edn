@@ -1,0 +1,7 @@
+^{:watch-dirs ["src/frontend"]
+  ;:ring-handler backend.core/app
+  }
+{:main frontend.core
+ :output-to "resources/public/js/app.js"
+ :closure-defines {"re_frame.trace.trace_enabled_QMARK_" true}
+ :preloads        [day8.re-frame-10x.preload]}

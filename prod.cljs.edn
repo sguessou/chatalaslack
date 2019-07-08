@@ -1,0 +1,4 @@
+;; Command for advanced compile
+;; # clojure -m figwheel.main -O advanced -bo prod
+{:main frontend.core
+ :output-to "resources/public/js/app.js"}
