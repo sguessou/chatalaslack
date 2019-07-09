@@ -15,4 +15,4 @@
         [:p.title.is-4 (:name current-user)]
         [:p.subtitle.is-6 "@blabla"]]]
       [:div.content
-       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris."]]]))
+       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec iaculis mauris.."]]]))

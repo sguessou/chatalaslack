@@ -25,19 +25,22 @@
     (on-close con (fn [status]
                     (swap! clients dissoc con)
                     (println con " disconnected. status: " status)
-                    (broadcast UPDATE-ACTIVE-USERS)))))
+                    (broadcast {:message UPDATE-ACTIVE-USERS})))))
 
 (defn rooms-data [req]
   {:status 200
    :body (generate-string [{:id 1
                             :name "Get functional or die trying"
-                            :active false}
+                            :active false
+                            :status "room"}
                            {:id 2
                             :name "My life after React"
-                            :active true}
+                            :active true
+                            :status "room"}
                            {:id 3
                             :name "OOP anonymous"
-                            :active false}])
+                            :active false
+                            :status "room"}])
    :headers {}})
 
 (defn users-data [req]

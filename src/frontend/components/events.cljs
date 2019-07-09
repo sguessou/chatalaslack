@@ -44,7 +44,7 @@
 (rf/reg-event-db
  :process-users-data
  (fn [db [_ response]]
-   (assoc db :users response)))
+   (assoc db :rooms (concat (filterv #(= (:status %) "room") (:rooms db)) response))))
 
 (rf/reg-event-db
  :change-room
@@ -71,3 +71,8 @@
  :process-new-messages
  (fn [db [_ response]]
    (assoc db :messages response)))
+
+(rf/reg-event-db
+ :set-current-user
+ (fn [db [_ data]]
+   (assoc db :current-user data)))

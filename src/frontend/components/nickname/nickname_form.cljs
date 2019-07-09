@@ -33,9 +33,11 @@
                                                   (js/console.log "invalid nickname!")
                                                   (do
                                                     (s/dispatch! "#/chat")
-                                                    (ws-send-message {:data {:name @name
-                                                                             :uuid token
-                                                                             :status :register-name}}))))}
+                                                    (let [user {:name @name
+                                                                :uuid token
+                                                                :status :register-name}]
+                                                      (rf/dispatch [:set-current-user (dissoc user :status)])
+                                                      (ws-send-message {:data user})))))}
             "Start chatting..."]]]]
         [:div.column]]
        [footer]]

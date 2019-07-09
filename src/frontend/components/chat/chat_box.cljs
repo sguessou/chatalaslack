@@ -23,15 +23,14 @@
 
 (defn box []
   (fn []
-    (let [rooms @(rf/subscribe [:rooms-info])
-          active-room (filter (fn [room] (:active room)) rooms)
-          name (:name (first active-room))
-          active-room-id @(rf/subscribe [:active-room])
-          room-messages @(rf/subscribe [:room-messages active-room-id])]
+    (let [room-status @(rf/subscribe [:room-status])
+          room-name @(rf/subscribe [:active-room-name])
+          messages (if (= room-status "room") @(rf/subscribe [:n-messages 5]) @(rf/subscribe [:n-messages-private 5]))]
       [:div
-       [:h2.title.is-3 [:i.far.fa-comments] (str " " name)]
+       [:h2.title.is-3
+        [:i.far.fa-comments] (str " " room-name)]
        [:div.box
-        (for [message room-messages]
+        (for [message messages]
           (if (= token (:uuid message))
             ^{:key (:message-uuid  message)} [write-sent-message message]
             ^{:key (:message-uuid  message)} [write-received-message message])) 
