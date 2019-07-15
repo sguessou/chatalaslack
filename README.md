@@ -1,3 +1,5 @@
+![alt text](https://raw.githubusercontent.com/sguessou/chatalaslack/master/resources/public/images/lambda.png)
+
 # Chat à la Slack
 
 ![alt text](https://raw.githubusercontent.com/sguessou/chatalaslack/master/chat_1.PNG)
