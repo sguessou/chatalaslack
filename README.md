@@ -42,6 +42,12 @@ Leiningen will download and install all the needed dependencies. After that, you
 To run a build for a production frontend bundle run this command: 
 #### $ clojure -m figwheel.main -O advanced -bo prod      
 
+
+## Best Resources for learning Clojure(Script)
+[PurelyFunctionalTV](https://purelyfunctional.tv/)  Clojure Training Online       
+[Learn Reagent + Re-frame](https://www.jacekschae.com/reagent-re-frame) Reagent + Re-frame  
+[Lambda Island](https://lambdaisland.com/) Clojure screencasts     
+
 ## License
 
 Copyright © 2019 FIXME
