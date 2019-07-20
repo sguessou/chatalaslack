@@ -11,8 +11,6 @@ This small application doesn't include all of the features expected in a real we
 There are 3 predefined rooms where the users can have a group chat.    
 Users are also able to message eachothers privately.    
 
-For a live version go here --> [Chat à la Slack](https://chatalaslack.herokuapp.com/)
-
 ## Technologies used in this project
 
 ### Backend
