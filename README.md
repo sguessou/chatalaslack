@@ -43,7 +43,7 @@ To run a build for a production frontend bundle run this command:
 
 ## Best Resources for learning Clojure(Script)
 [PurelyFunctionalTV](https://purelyfunctional.tv/)  Clojure Training Online       
-[Learn Reagent + Re-frame](https://www.jacekschae.com/reagent-re-frame) Reagent + Re-frame  
+[Learn Reagent + Re-frame](https://www.jacekschae.com/a/322ca) Reagent + Re-frame  
 [Lambda Island](https://lambdaisland.com/) Clojure screencasts     
 
 ## License
