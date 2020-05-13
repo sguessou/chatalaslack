@@ -35,10 +35,10 @@ I'm using emacs + cider in my workflow for REPL driven development, but I believ
 
 At the root of the project, launch the following command: 
 ####  $ lein run 8000.    
-Leiningen will download and install all the needed dependencies. After that, you can open your browser and navigate to localhost:8000. 
+Leiningen will download and install all the needed dependencies. After that, you can open your browser and navigate to `localhost:8000`. 
 
 To generate a production frontend build run this command: 
-#### $ clojure -m figwheel.main -O advanced -bo prod      
+`$ clojure -m figwheel.main -O advanced -bo prod`      
 
 
 ## Best Resources for learning Clojure(Script)
